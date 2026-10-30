@@ -128,17 +128,17 @@ id
 ### 1. 脚本源码
 
 ```
-# 此处粘贴你的完整PoC代码
+<img width="443" height="644" alt="屏幕截图 2026-10-30 200717" src="https://github.com/user-attachments/assets/38ffcefb-2fa1-4d0b-8c2f-4d0bc57a3952" />
 ```
 
-【截图 5：PoC 源码截图】
+
 
 ### 2. 脚本运行结果
 
 输入靶机 IP，自动检测并触发漏洞，成功验证漏洞存在。
 
-【截图 6：脚本运行成功结果截图】<img width="840" height="461" alt="屏幕截图 2026-10-30 195948" src="https://github.com/user-attachments/assets/ac86fd64-671c-48aa-b5ea-a96ba8cb800c" />
-<img width="443" height="644" alt="屏幕截图 2026-10-30 200717" src="https://github.com/user-attachments/assets/38ffcefb-2fa1-4d0b-8c2f-4d0bc57a3952" />
+<img width="840" height="461" alt="屏幕截图 2026-10-30 195948" src="https://github.com/user-attachments/assets/ac86fd64-671c-48aa-b5ea-a96ba8cb800c" />
+
 
 
 ## 六、漏洞总结
