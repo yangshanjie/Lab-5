@@ -75,7 +75,9 @@ nmap -Pn -p 6200 192.168.225.130
 
 结果：**6200 closed**，后门未开启。
 
-【截图 2：未触发漏洞前 6200 端口关闭截图】
+<img width="385" height="105" alt="屏幕截图 2026-10-30 202228" src="https://github.com/user-attachments/assets/36bc8eba-98af-4557-8350-f602b3515f4d" />
+
+
 
 ### 步骤 4：NC 连接 FTP 并触发后门
 
@@ -128,7 +130,7 @@ id
 ### 1. 脚本源码
 
 ```
-<img width="443" height="644" alt="屏幕截图 2026-10-30 200717" src="https://github.com/user-attachments/assets/38ffcefb-2fa1-4d0b-8c2f-4d0bc57a3952" />
+
 ```
 
 
