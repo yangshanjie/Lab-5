@@ -39,8 +39,8 @@ vsftpd 2.3.4 版本存在恶意后门，开发者在源码中植入恶意逻辑�
 ## 四、实验复现步骤
 
 ### 步骤 1：靶机信息收集<img width="372" height="371" alt="屏幕截图 2026-10-30 201942" src="https://github.com/user-attachments/assets/c43d3715-8027-41a2-9e79-d3d6d98a4bc8" />
-<img width="509" height="263" alt="屏幕截图 2026-10-30 195313" src="https://github.com/user-attachments/assets/cddd2aa1-b0f0-42ca-aac5-7eaaf3ba0629" /><img width="385" height="105" alt="屏幕截图 2026-10-30 202228" src="https://github.com/user-attachments/assets/36bc8eba-98af-4557-8350-f602b3515f4d" /><img width="290" height="143" alt="屏幕截图 2026-10-30 203151" src="https://github.com/user-attachments/assets/0be5724d-9011-4198-a547-35e025b1004a" />
-<img width="223" height="79" alt="屏幕截图 2026-10-30 202647" src="https://github.com/user-attachments/assets/bf649358-6722-4e60-87ff-1a1b249ef49c" />
+<img width="509" height="263" alt="屏幕截图 2026-10-30 195313" src="https://github.com/user-attachments/assets/cddd2aa1-b0f0-42ca-aac5-7eaaf3ba0629" /><img width="385" height="105" alt="屏幕截图 2026-10-30 202228" src="https://github.com/user-attachments/assets/36bc8eba-98af-4557-8350-f602b3515f4d" />
+
 
 
 靶机开机登录，账号密码：`msfadmin / msfadmin`
@@ -63,7 +63,7 @@ nmap -Pn -sV -p 21 192.168.225.130
 
 扫描结果显示：**vsftpd 2.3.4**，确认存在漏洞。
 
-【截图 1：Nmap 端口扫描版本结果截图】
+<img width="223" height="79" alt="屏幕截图 2026-10-30 202647" src="https://github.com/user-attachments/assets/bf649358-6722-4e60-87ff-1a1b249ef49c" />
 
 ### 步骤 3：初始状态 6200 端口检测
 
@@ -105,7 +105,7 @@ nmap -Pn -p 6200 192.168.225.130
 
 端口变为 open，后门触发成功。
 
-【截图 3：触发漏洞后 6200 端口开放截图】
+<img width="290" height="143" alt="屏幕截图 2026-10-30 203151" src="https://github.com/user-attachments/assets/0be5724d-9011-4198-a547-35e025b1004a" />
 
 ### 步骤 6：连接后门获取 root 权限
 
