@@ -107,29 +107,14 @@ nmap -Pn -p 6200 192.168.225.130
 
 <img width="290" height="143" alt="屏幕截图 2026-10-30 203151" src="https://github.com/user-attachments/assets/0be5724d-9011-4198-a547-35e025b1004a" />
 
-### 步骤 6：连接后门获取 root 权限
 
-```
-nc 192.168.225.130 6200
-```
-
-连接成功后输入命令：
-
-```
-id
-```
-
-成功查看 **uid=0(root)**，获取最高权限。
-
-【截图 4：成功获取 root shell 截图】
-
-## 五、Python PoC 脚本验证（作业要求）
+## 五、Python PoC 脚本验证
 
 ### 1. 脚本源码
 
-```
+<img width="443" height="644" alt="屏幕截图 2026-10-30 200717" src="https://github.com/user-attachments/assets/2de55dcf-b6fc-4124-9a37-eb645f7f58c0" />
 
-```
+
 
 
 
